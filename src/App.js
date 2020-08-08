@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.css";
+import Tracker from "./components/Tracker";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Expense tracker</h1>
+    <div className="app">
+      <Tracker />
     </div>
   );
 }
