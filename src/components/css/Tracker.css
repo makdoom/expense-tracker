@@ -39,7 +39,6 @@
 }
 
 .tracker__balance {
-  /* border: 1px solid #000; */
   z-index: 2;
   position: absolute;
   top: 12%;
@@ -56,6 +55,24 @@
   background: white;
   letter-spacing: 0.7px;
   box-shadow: 0 6px 6px rgba(77, 77, 77, 0.3);
+}
+
+.tracker__inc__exp {
+  box-shadow: 0 6px 6px rgba(77, 77, 77, 0.2);
+  margin: 4.4rem 0.8rem 0.8rem;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background: #f0f0f0;
+  align-items: center;
+  border-radius: 10px;
+  line-height: 1.5;
+}
+
+.tracker__inc__exp .tracker__income h4,
+.tracker__expense h4 {
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
 }
 
 /* ########### Media Query For Mobile ################# */
