@@ -2,6 +2,7 @@ import React from "react";
 import "./css/Tracker.css";
 import Balance from "./Balance";
 import IncomeExpense from "./IncomeExpense";
+import History from "./History";
 
 const Tracker = () => {
   return (
@@ -11,6 +12,7 @@ const Tracker = () => {
       </div>
       <Balance />
       <IncomeExpense />
+      <History />
     </div>
   );
 };
