@@ -82,23 +82,32 @@
   color: red;
 }
 
+.transaction__history {
+  /* border: 1px solid #000; */
+}
 .transaction__history p {
   text-align: left;
-  margin: 20px 0px 0px 10px;
+  margin: 14px 0px 0px 10px;
   letter-spacing: 0.8px;
   font-size: 1.1rem;
 }
 
 .transaction__lists {
-  /* border: 1px solid #000; */
   margin-top: 6px;
-  height: 155px;
+  height: 170px;
   overflow: auto;
+}
+
+.minus {
+  border-left: 4px solid red;
+}
+
+.plus {
+  border-left: 4px solid green;
 }
 
 .transaction__history .transaction__item {
   display: flex;
-  border-left: 4px solid red;
   justify-content: space-between;
   align-items: center;
   padding: 0.35rem 1rem;
@@ -114,7 +123,7 @@
 
 .add__transaction {
   position: absolute;
-  bottom: 15px;
+  bottom: 13px;
   left: 0;
 }
 
@@ -153,7 +162,7 @@
   border: none;
   outline: none;
   width: 80%;
-  margin-top: 4px;
+  margin-top: 3px;
   background: #7011f5;
   font-size: 1.2rem;
   border-radius: 30px;
