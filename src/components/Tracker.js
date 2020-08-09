@@ -3,6 +3,7 @@ import "./css/Tracker.css";
 import Balance from "./Balance";
 import IncomeExpense from "./IncomeExpense";
 import History from "./History";
+import AddTransaction from "./AddTransaction";
 
 const Tracker = () => {
   return (
@@ -13,6 +14,7 @@ const Tracker = () => {
       <Balance />
       <IncomeExpense />
       <History />
+      <AddTransaction />
     </div>
   );
 };

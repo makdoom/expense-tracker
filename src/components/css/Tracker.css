@@ -1,4 +1,5 @@
 .tracker {
+  position: relative;
   width: 35%;
   height: 100vh;
   text-align: center;
@@ -69,16 +70,111 @@
   line-height: 1.5;
 }
 
-.tracker__inc__exp .tracker__income h4,
-.tracker__expense h4 {
+.tracker__inc__exp .tracker__income h4 {
   letter-spacing: 0.9px;
   text-transform: uppercase;
+  color: green;
 }
 
+.tracker__inc__exp .tracker__expense h4 {
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  color: red;
+}
+
+.transaction__history p {
+  text-align: left;
+  margin: 20px 0px 0px 10px;
+  letter-spacing: 0.8px;
+  font-size: 1.1rem;
+}
+
+.transaction__lists {
+  /* border: 1px solid #000; */
+  margin-top: 6px;
+  height: 155px;
+  overflow: auto;
+}
+
+.transaction__history .transaction__item {
+  display: flex;
+  border-left: 4px solid red;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.35rem 1rem;
+  margin: 0.6rem 1rem 0 0.9rem;
+  background: #f0f0f0;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.transaction__history .transaction__item:hover {
+  text-decoration: line-through;
+}
+
+.add__transaction {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+}
+
+.add__transaction p {
+  text-align: left;
+  margin: 10px 0px 0px 10px;
+  letter-spacing: 0.8px;
+  font-size: 1.1rem;
+}
+
+.add__transaction .form__control .input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 15px 10px;
+}
+
+.add__transaction .form__control .input input {
+  padding: 8px 10px;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  border: 1px solid #b9b9b9;
+  outline: none;
+}
+.add__transaction .form__control .input .text {
+  width: 60%;
+  margin-right: 10px;
+}
+
+.add__transaction .form__control .input .amount {
+  width: 40%;
+}
+
+.form__control button {
+  padding: 8px 20px;
+  border: none;
+  outline: none;
+  width: 80%;
+  margin-top: 4px;
+  background: #7011f5;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.form__control button:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
 /* ########### Media Query For Mobile ################# */
 @media only screen and (max-width: 700px) {
   .tracker {
     width: 100%;
     border-radius: 0;
+  }
+
+  .tracker__bg::before {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
   }
 }
